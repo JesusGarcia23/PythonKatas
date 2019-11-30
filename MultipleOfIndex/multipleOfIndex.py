@@ -1,7 +1,7 @@
 def multipleOfIndex(theArr):
     result = []
-    for i in range(len(theArr)):
-        if i != 0 and (theArr[i] % i) == 0:
+    for i in range(1, len(theArr)):
+        if (theArr[i] % i) == 0:
             result.append(theArr[i])
 
     return result
